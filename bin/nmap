@@ -1,5 +1,5 @@
 #!/bin/sh
 
-proxychains4 -f /etc/proxychains.conf /usr/bin/nmap -sT -PN -n "$@"
+proxychains4 -f /etc/proxychains.conf /usr/bin/nmap -sT -Pn -n "$@"
 
 exit $?
